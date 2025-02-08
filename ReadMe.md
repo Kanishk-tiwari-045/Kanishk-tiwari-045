@@ -1,9 +1,9 @@
 <h1>Hi 👋, I'm kanishk Tiwari</h1>
-<h4 align="center">As a Computer Science Engineering student at JK Lakshmipat University, Rajasthan, I have developed a strong foundation in web development, cloud computing, and software engineering. 
+<h4>As a Computer Science Engineering student at JK Lakshmipat University, Rajasthan, I have developed a strong foundation in web development, cloud computing, and software engineering. 
 <br>
 My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programming languages, enabling me to contribute actively to GitHub with 22 public repositories and consistent commits.</h4>
-
-<h3 align="left">Connect with me:</h3>
+<hr>
+<h3> Connect with me :) </h3>
 <p align="left">
 <a href="https://twitter.com/kanishk_t045" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="kanishk_t045" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/kanishk-tiwari-590368248" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="kanishk-tiwari-590368248" height="30" width="40" /></a>
@@ -15,9 +15,9 @@ My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programmi
 <a href="https://www.leetcode.com/kanishk_045" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="kanishk_045" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">🛠️ Language and Tools</h3>
+<hr>
 
-<p align="center">
+<h3> 🛠️ Language and Tools </h3>
   <table>
     <tr>
       <td align="center">
@@ -191,15 +191,13 @@ My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programmi
         </a>
       </td>
   </table>
-</p>
 
-# 📊 GitHub Stats:
+## 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=Kanishk-tiwari-045&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Kanishk-tiwari-045&theme=dark&hide_border=false)<br/>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Kanishk-tiwari-045&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-<hr>
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=Kanishk-tiwari-045&theme=radical&no-frame=false&no-bg=true&margin-w=4)
