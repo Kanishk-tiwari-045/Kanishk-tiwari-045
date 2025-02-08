@@ -1,5 +1,7 @@
 <h1>Hi 👋, I'm kanishk Tiwari</h1>
-<a align="center">As a Computer Science Engineering student at JK Lakshmipat University, Rajasthan, I have developed a strong foundation in web development, cloud computing, and software engineering. <br>My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programming languages, enabling me to contribute actively to GitHub with 22 public repositories and consistent commits.
+<h4 align="center">As a Computer Science Engineering student at JK Lakshmipat University, Rajasthan, I have developed a strong foundation in web development, cloud computing, and software engineering. 
+<br>
+My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programming languages, enabling me to contribute actively to GitHub with 22 public repositories and consistent commits.</h4>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -43,6 +45,18 @@
         </a>
       </td>
       <td align="center">
+        <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="40" height="40"/>
+          <br/>Tailwind CSS
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://www.python.org" target="_blank" rel="noreferrer">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
+          <br/>Python
+        </a>
+      </td>
+      <td align="center">
         <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/>
           <br/>C++
@@ -58,12 +72,6 @@
         <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
           <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django" width="40" height="40"/>
           <br/>Django
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
-          <br/>Docker
         </a>
       </td>
       <td align="center">
@@ -119,6 +127,12 @@
         <a href="https://www.java.com" target="_blank" rel="noreferrer">
           <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40"/>
           <br/>Java
+        </a>
+      </td>
+    <td align="center">
+        <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker" width="40" height="40"/>
+          <br/>Docker
         </a>
       </td>
       <td align="center">
