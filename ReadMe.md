@@ -184,12 +184,6 @@ My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programmi
           <br/>Postman
         </a>
       </td>
-      <td align="center">
-        <a href="https://spring.io/" target="_blank" rel="noreferrer">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="spring" width="40" height="40"/>
-          <br/>Spring Boot
-        </a>
-      </td>
   </table>
 
 ## 📊 GitHub Stats:
