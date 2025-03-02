@@ -88,9 +88,9 @@ My proficiency spans the MERN stack, Django, Docker, AWS, and multiple programmi
         </a>
       </td>
       <td align="center">
-        <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
-          <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" width="40" height="40"/>
-          <br/>Firebase
+        <a href="https://supabase.com/" target="_blank" rel="noreferrer">
+          <img src="[https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Flogowik.com%2Fsupabase-icon-logo-vector-71414.html&psig=AOvVaw25FJ8KVDcnb7t-ZomuyLbl&ust=1740974923683000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCICw5ZDD6osDFQAAAAAdAAAAABAE)" width="40" height="40">
+          <br/>Supabase
         </a>
       </td>
       <td align="center">
