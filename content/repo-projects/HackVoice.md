@@ -5,9 +5,12 @@ github: 'https://github.com/Kanishk-tiwari-045/HackVoice'
 external: ''
 tech:
   - TypeScript
-  - JavaScript
-  - CSS
-  - HTML
+  - WebRTC
+  - Socket.io
+  - React
+  - Supabase
+  - Node.js
+  - Express
 company: ''
 showInProjects: true
 pinned: false

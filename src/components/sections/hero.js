@@ -76,7 +76,7 @@ const StyledHeroSection = styled.section`
 
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 70px;
+    margin-top: 50px;
 
     @media (max-width: 768px) {
       margin-top: 40px;

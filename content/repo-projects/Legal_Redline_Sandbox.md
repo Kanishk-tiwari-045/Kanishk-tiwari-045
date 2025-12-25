@@ -5,9 +5,11 @@ github: 'https://github.com/Kanishk-tiwari-045/Legal_Redline_Sandbox'
 external: ''
 tech:
   - Python
-  - JavaScript
-  - CSS
-  - HTML
+  - FastAPI
+  - Docker
+  - Render
+  - RAG Engine
+  - CloudSql
 company: ''
 showInProjects: true
 pinned: false

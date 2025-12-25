@@ -5,9 +5,9 @@ github: 'https://github.com/Kanishk-tiwari-045/placement_cell_official'
 external: ''
 tech:
   - Python
-  - JavaScript
-  - CSS
-  - HTML
+  - Django
+  - React
+  - Bootstrap
   - Docker
 company: ''
 showInProjects: true

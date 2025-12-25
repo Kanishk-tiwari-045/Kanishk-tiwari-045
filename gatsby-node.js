@@ -20,6 +20,15 @@ exports.onPostBuild = async () => {
     await fs.copy(sourceDir, destDir);
     console.log('✅ Tech icons copied to public folder');
   }
+
+  // Copy resume.pdf to public folder
+  const resumeSource = path.join(__dirname, 'content/resume.pdf');
+  const resumeDest = path.join(__dirname, 'public/resume.pdf');
+  
+  if (fs.existsSync(resumeSource)) {
+    await fs.copy(resumeSource, resumeDest);
+    console.log('✅ Resume PDF copied to public folder');
+  }
 };
 
 exports.createPages = async ({ actions, graphql, reporter }) => {

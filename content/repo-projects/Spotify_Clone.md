@@ -4,9 +4,12 @@ title: 'Spotify Clone'
 github: 'https://github.com/Kanishk-tiwari-045/Spotify_Clone'
 external: 'https://spotify-clone-lilac-beta.vercel.app'
 tech:
-  - JavaScript
-  - CSS
-  - HTML
+  - React
+  - Context Api
+  - Tailwind CSS
+  - Javascript
+  - Redux
+  - Node.js
 company: ''
 showInProjects: true
 pinned: false

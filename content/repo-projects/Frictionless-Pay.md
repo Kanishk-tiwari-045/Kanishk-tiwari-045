@@ -4,9 +4,11 @@ title: 'Frictionless Pay'
 github: 'https://github.com/Kanishk-tiwari-045/Frictionless-Pay'
 external: ''
 tech:
+  - React
+  - Aiven PostgreSql
+  - Express
+  - Node.js
   - JavaScript
-  - CSS
-  - HTML
 company: ''
 showInProjects: true
 pinned: false

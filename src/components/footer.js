@@ -84,16 +84,22 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/Kanishk-tiwari-045/MyPortfolio')
+    fetch('https://api.github.com/repos/Kanishk-tiwari-045/portfolio')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
         setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
+          stars: stargazers_count || 0,
+          forks: forks_count || 0,
         });
       })
-      .catch(e => console.error(e));
+      .catch(e => {
+        console.error('Failed to fetch GitHub stats:', e);
+        setGitHubInfo({
+          stars: null,
+          forks: null,
+        });
+      });
   }, []);
 
   return (
@@ -112,10 +118,10 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/Kanishk-tiwari-045/MyPortfolio">
+        <a href="https://github.com/Kanishk-tiwari-045/portfolio">
           <div>Built by Kanishk Tiwari</div>
 
-          {githubInfo.stars && githubInfo.forks && (
+          {githubInfo.stars && githubInfo.stars > 0 && githubInfo.forks && githubInfo.forks > 0 && (
             <div className="github-stats">
               <span>
                 <Icon name="Star" />
