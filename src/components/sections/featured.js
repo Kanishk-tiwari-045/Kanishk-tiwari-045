@@ -276,13 +276,17 @@ const StyledProject = styled.li`
     backdrop-filter: blur(10px);
 
     @media (max-width: 768px) {
-      padding: 20px 0;
+      padding: 20px 15px;
       background-color: transparent;
       box-shadow: none;
 
       &:hover {
         box-shadow: none;
       }
+    }
+
+    @media (max-width: 480px) {
+      padding: 15px 12px;
     }
 
     a {

@@ -9,8 +9,8 @@ tech:
   - Express
   - MongoDB
   - React
-  - JWT
-  - RESTful API
+  - JWT Auth
+  - PayU Sandbox
 showInProjects: true
 ---
 

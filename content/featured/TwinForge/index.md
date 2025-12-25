@@ -6,11 +6,11 @@ github: 'https://github.com/Kanishk-tiwari-045/TwinForge'
 external: ''
 tech:
   - React
-  - Three.js
-  - WebGL
+  - Express
+  - Reinforcement Learning
   - Node.js
-  - IoT
-  - Real-time Data
+  - Javascript
+  - Supabase
 showInProjects: true
 ---
 

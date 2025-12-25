@@ -32,6 +32,13 @@ const StyledSocialLinks = styled.div`
 
     a {
       padding: 10px;
+      transition: transform 0.3s ease;
+      
+      &:hover,
+      &:focus {
+        transform: translateY(-3px);
+      }
+      
       svg {
         width: 20px;
         height: 20px;
@@ -77,7 +84,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/Kanishk-tiwari-045/portfolio')
+    fetch('https://api.github.com/repos/Kanishk-tiwari-045/MyPortfolio')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -105,7 +112,7 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/Kanishk-tiwari-045/portfolio">
+        <a href="https://github.com/Kanishk-tiwari-045/MyPortfolio">
           <div>Built by Kanishk Tiwari</div>
 
           {githubInfo.stars && githubInfo.forks && (

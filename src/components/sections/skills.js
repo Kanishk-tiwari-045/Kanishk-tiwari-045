@@ -7,9 +7,19 @@ import { usePrefersReducedMotion } from '@hooks';
 const StyledSkillsSection = styled.section`
   max-width: 1200px;
 
+  @media (min-width: 769px) {
+    padding: 0 40px;
+  }
+
   .inner {
     display: flex;
     flex-direction: column;
+  }
+
+  p {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   .skills-grid {
@@ -201,7 +211,7 @@ const Skills = () => {
             <StyledSkillCard key={i}>
               <div className="skill-icon">
                 <img
-                  src={`/tech-icons/${icon}`}
+                  src={`${process.env.NODE_ENV === 'production' ? '' : ''}/tech-icons/${icon}`}
                   alt={name}
                   loading="lazy"
                 />

@@ -7,7 +7,7 @@ external: ''
 tech:
   - Next.js
   - Ollama Mistral
-  - Blockchain
+  - Infura Api
   - MetaMask
   - Smart Contracts
   - Solidity

@@ -6,9 +6,21 @@
 
 const path = require('path');
 const { EventEmitter } = require('events');
+const fs = require('fs-extra');
 
 // Increase max listeners to prevent warnings with many markdown files
 EventEmitter.defaultMaxListeners = 20;
+
+exports.onPostBuild = async () => {
+  // Copy tech-icons to public folder for production builds
+  const sourceDir = path.join(__dirname, 'content/images/tech-icons');
+  const destDir = path.join(__dirname, 'public/tech-icons');
+  
+  if (fs.existsSync(sourceDir)) {
+    await fs.copy(sourceDir, destDir);
+    console.log('✅ Tech icons copied to public folder');
+  }
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -52,6 +64,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@utils': path.resolve(__dirname, 'src/utils'),
       },
+    },
+    // Suppress deprecation warnings from babel-plugin-lodash
+    infrastructureLogging: {
+      level: 'error',
     },
   });
 };

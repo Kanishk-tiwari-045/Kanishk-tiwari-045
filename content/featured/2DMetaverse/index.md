@@ -7,10 +7,11 @@ external: ''
 tech:
   - TypeScript
   - Phaser
-  - WebRTC
   - Socket.io
   - Node.js
   - React
+  - Express
+  - PostgreSql
 showInProjects: true
 ---
 

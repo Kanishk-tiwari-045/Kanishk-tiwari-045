@@ -89,22 +89,24 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 140px;
-    max-width: 180px;
-    padding: 0 15px;
+    width: auto;
+    min-width: fit-content;
+    padding: 0 20px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
+    margin-right: 10px;
   }
   @media (max-width: 480px) {
-    min-width: 120px;
-    max-width: 150px;
+    padding: 0 15px;
     font-size: 11px;
+    margin-right: 8px;
   }
 
   &:hover,
   &:focus {
     background-color: var(--light-navy);
+    color: var(--green);
   }
 `;
 
@@ -122,16 +124,7 @@ const StyledHighlight = styled.div`
   transition-delay: 0.1s;
 
   @media (max-width: 600px) {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
-    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
-  }
-  @media (max-width: 480px) {
-    margin-left: 25px;
+    display: none;
   }
 `;
 
@@ -253,7 +246,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">Where I've Worked</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>

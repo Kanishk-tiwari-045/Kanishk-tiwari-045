@@ -5,11 +5,13 @@ cover: './demo.png'
 github: 'https://github.com/Kanishk-tiwari-045/bail_hack'
 external: 'https://bail-reckoner.vercel.app'
 tech:
-  - Next.js
+  - React.js
   - Tailwind CSS
-  - Gemini API
-  - MongoDB
-  - Machine Learning
+  - Gemini Api
+  - RAG Engine GCP
+  - Supabase
+  - Express
+  - Node.js
 showInProjects: true
 ---
 

@@ -5,12 +5,11 @@ cover: './demo.png'
 github: 'https://github.com/Kanishk-tiwari-045/Furniture'
 external: 'https://furniture-for-sale.vercel.app/'
 tech:
-  - Next.js
-  - React
+  - React.js
+  - React bits
   - Tailwind CSS
-  - MongoDB
-  - Stripe
-  - Vercel
+  - Framer Motion
+  - Javascript
 showInProjects: true
 ---
 
