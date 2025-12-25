@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
@@ -9,12 +10,30 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  height: 100vh;
-  padding: 0;
+  padding: var(--nav-height) 0 100px 0;
+  margin-bottom: 60px;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    height: auto;
-    padding-top: var(--nav-height);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 80px;
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   h1 {
@@ -46,6 +65,73 @@ const StyledHeroSection = styled.section`
   }
 `;
 
+const StyledPic = styled.div`
+  position: relative;
+  max-width: 300px;
+
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+
+  .wrapper {
+    ${({ theme }) => theme.mixins.boxShadow};
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      transform: translate(-4px, -4px);
+
+      &:after {
+        transform: translate(8px, 8px);
+      }
+
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: var(--transition);
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+
+    &:after {
+      border: 2px solid var(--green);
+      top: 14px;
+      left: 14px;
+      z-index: -1;
+    }
+  }
+`;
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -63,27 +149,41 @@ const Hero = () => {
   const two = <h2 className="big-heading">Kanishk Tiwari.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
-    <>
-      <p>
-        I'm a Computer Science student at JK Lakshmipat University specializing in Full Stack Development,
-        AI/ML, and Blockchain technologies. 2x Hackathon Winner with hands-on experience in React, Node.js,
-        Express.js, and modern web technologies. Passionate about building innovative solutions that make a difference.
-      </p>
-    </>
-  );
-  const five = (
-    <a
-      className="email-link"
-      href="/#projects"
-      rel="noreferrer">
-      Check out my projects!
-    </a>
+    <div className="hero-content">
+      <div>
+        <p>I'm a final year student pursuing my B.Tech in <a href="#about">CSE at JK Lakshmipat University</a>, Jaipur (CGPA 8.15), where I've developed strong expertise in Full Stack Development, AI and ML.</p>
+
+        <p>I've had the opportunity to work as a <a href="#jobs">React Developer at Celebal Technologies</a> and as an <a href="#jobs">Associate Software Intern at Brudite Private Limited</a>. Through these experiences, I've mastered the MERN stack, worked with cloud technologies like AWS, and delivered production-ready applications.</p>
+
+        <p>I'm proud to be a <a href="#about">2x Hackathon Winner</a>, having secured Bronze in <a href="#about">Formidium Hackathon 2024</a> (50k prize) and 1st position in <a href="#about">LNMIIT HackCrux 2025</a>. I've also completed 3 freelance Dev projects, demonstrating my ability to deliver quality work independently.</p>
+        
+        <a
+          className="email-link"
+          href="/#projects"
+          rel="noreferrer">
+          Check out my projects!
+        </a>
+      </div>
+
+      <StyledPic>
+        <div className="wrapper">
+          <StaticImage
+            className="img"
+            src="../../../content/images/me.jpg"
+            width={500}
+            quality={95}
+            formats={['AUTO', 'WEBP', 'AVIF']}
+            alt="Headshot"
+          />
+        </div>
+      </StyledPic>
+    </div>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, three, four];
 
   return (
-    <StyledHeroSection>
+    <StyledHeroSection id="about">
       {prefersReducedMotion ? (
         <>
           {items.map((item, i) => (

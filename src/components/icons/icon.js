@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import {
   IconExternal,
   IconFolder,
-  IconFork,
   IconGitHub,
   IconInstagram,
   IconLeetcode,
   IconLinkedin,
   IconLoader,
   IconLogo,
-  IconStar,
   IconTwitter,
 } from '@components/icons';
 
@@ -20,8 +18,6 @@ const Icon = ({ name }) => {
       return <IconExternal />;
     case 'Folder':
       return <IconFolder />;
-    case 'Fork':
-      return <IconFork />;
     case 'GitHub':
       return <IconGitHub />;
     case 'Instagram':
@@ -34,8 +30,6 @@ const Icon = ({ name }) => {
       return <IconLoader />;
     case 'Logo':
       return <IconLogo />;
-    case 'Star':
-      return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
     case 'X':
